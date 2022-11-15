@@ -1,0 +1,734 @@
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "78MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "67MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "67MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "72MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "83MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "85MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "85MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "92MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "82MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "83MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "105MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "85MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "203MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "200MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "175MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "166MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "161MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "146MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "122MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "109MB"
+"host_available_cpu": "400%"}
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 796
+"rx_packets": 10
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "65MB"
+"host_available_cpu": "-400%"}
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 796
+"rx_packets": 10
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "76MB"
+"host_available_cpu": "-400%"}
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "77MB"
+"host_available_cpu": "-400%"}
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 866
+"rx_packets": 11
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "67MB"
+"host_available_cpu": "-400%"}
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 1076
+"rx_packets": 14
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 1076
+"rx_packets": 14
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "72MB"
+"host_available_cpu": "-400%"}
+
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 1076
+"rx_packets": 14
+"tx_bytes": 0
+"tx_packets": 0}
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 1146
+"rx_packets": 15
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 1146
+"rx_packets": 15
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1812
+"rx_packets": 22
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "19MB"
+"host_available_cpu": "-400%"}
+
+
+
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 1146
+"rx_packets": 15
+"tx_bytes": 0
+"tx_packets": 0}
+{"running_container_numbers": 3
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.4
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034826217176290313%"
+"rx_bytes": 1216
+"rx_packets": 16
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.3
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "0MB"
+"memory_usage_percent": "0.0034328699788057594%"
+"rx_bytes": 1216
+"rx_packets": 16
+"tx_bytes": 0
+"tx_packets": 0}
+{"container_ip": 172.17.0.2
+"pid": 1
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "1MB"
+"memory_usage_percent": "0.016567329028149533%"
+"rx_bytes": 1882
+"rx_packets": 23
+"tx_bytes": 0
+"tx_packets": 0}
+
+]
+"host_available_memory": "17MB"
+"host_available_cpu": "-400%"}
+
+
+
