@@ -25,7 +25,7 @@ public class Docker {
         while (true) {
             try {
 
-                Thread.sleep(3000);
+                Thread.sleep(2000);
                 String command = cmd.inputCommand(
                         "curl -s --unix-socket /var/run/docker.sock http://v1.41/containers/json");
                 String result = cmd.execCommand(command);
@@ -68,9 +68,9 @@ public class Docker {
                     long pid = containerInspect.getState().getPid(); //pid
                     long maxMemory = containerStats.getMemoryStats().getLimit(); // 할당된 메모리 크기
                     long cpuNum = containerStats.getCpuStats().getOnlineCpus(); // 할당된 cpu 개수
-                    long memoryUsage = containerStats.getMemoryStats().getUsage();
-                    double memoryUsagePercent = caculator.calcMemoryUsage();
-                    double cpuUsage = caculator.calcCpuUsage();
+                    long memoryUsage = containerStats.getMemoryStats().getUsage(); // 컨테이너가 사용중인 메모리
+                    double memoryUsagePercent = caculator.calcMemoryUsage(); // 컨테이너가 사용중인 메모리 %
+                    double cpuUsage = caculator.calcCpuUsage(); // 컨테이너가 사용중인 cpu %
 
                     Eth0 eth0 = containerStats.getNetworks().getEth0();
                     long rxBytes = eth0.getRxBytes();
@@ -106,7 +106,7 @@ public class Docker {
                 writer.write("\n]\n\"host_available_memory\": \"" + hostFreeMemory / 1000000 + "MB\"");
                 System.out.println("]\n\"host_available_memory\": \"" + hostFreeMemory / 1000000 + "MB\"");
                 writer.write("\n\"host_available_cpu\": \"" + (hostCpu - hostCpuUsage) + "%\"}\n\n\n\n");
-                System.out.println("\"host_available_cpu\": \"" + (hostCpu - hostCpuUsage) + "%\"}");
+                System.out.println("\"host_available_cpu\": \"" + (hostCpu - hostCpuUsage) + "%\"}\n\n\n\n");
                 writer.flush();
             } catch (Exception e) {
 
