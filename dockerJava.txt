@@ -1936,3 +1936,47 @@
 
 
 
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"pid": 1915
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "67MB"
+"memory_usage_percent": "0.8154309993134261%"
+"rx_bytes": 21740
+"rx_packets": 48
+"tx_bytes": 1726
+"tx_packets": 28}
+
+]
+"host_available_memory": "85MB"
+"host_available_cpu": "800.0%"}
+
+
+
+{"running_container_numbers": 1
+"host_memory": "17179MB"
+"host_cpu": "800%"
+[
+{"container_ip": 172.17.0.2
+"pid": 1915
+"container_cpu_Num": 4
+"container_memory": "8232MB"
+"cpu_usage": "0.0%"
+"memory_usage": "67MB"
+"memory_usage_percent": "0.8154309993134261%"
+"rx_bytes": 21740
+"rx_packets": 48
+"tx_bytes": 1726
+"tx_packets": 28}
+
+]
+"host_available_memory": "82MB"
+"host_available_cpu": "669.7787208244922%"}
+
+
+

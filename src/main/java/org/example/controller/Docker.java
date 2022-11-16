@@ -11,9 +11,7 @@ import org.example.containerstatus.Eth0;
 import org.example.containerstatus.containerJson.ContainerStat;
 import org.example.inspectjson.ContainerInspect;
 import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-//import java.lang.management.OperatingSystemMXBean;
 
 public class Docker {
 
@@ -35,16 +33,15 @@ public class Docker {
                 JSONArray jsonArray = (JSONArray) parser.parse(result);
                 int numberOfContainer = jsonArray.size();
                 long hostMemory = osBean.getTotalMemorySize();
-                long hostMemoryUsage = osBean.getFreeMemorySize();
+                long hostFreeMemory = osBean.getFreeMemorySize();
                 long hostCpu = Runtime.getRuntime().availableProcessors() * 100;
-                double hostCpuUsage = osBean.getSystemCpuLoad()*hostCpu;
-                long hostAvailableMemory = Runtime.getRuntime().freeMemory();
+                double hostCpuUsage = osBean.getSystemCpuLoad() * hostCpu;
                 writer.write("{\"running_container_numbers\": " + numberOfContainer);
-                writer.write("\n\"host_memory\": \"" + (hostMemory/1000000)+ "MB\"");
-                writer.write("\n\"host_cpu\": \"" + hostCpu +"%\"\n[\n");
+                writer.write("\n\"host_memory\": \"" + (hostMemory / 1000000) + "MB\"");
+                writer.write("\n\"host_cpu\": \"" + hostCpu + "%\"\n[\n");
                 System.out.println("{\"running_container_numbers\": " + numberOfContainer);
-                System.out.println("\"host_memory\": \"" + (hostMemory/1000000)+ "MB\"");
-                System.out.println("\"host_cpu\": \"" + hostCpu +"%\"");
+                System.out.println("\"host_memory\": \"" + (hostMemory / 1000000) + "MB\"");
+                System.out.println("\"host_cpu\": \"" + hostCpu + "%\"");
                 System.out.println("[");
                 writer.flush();
 
@@ -64,7 +61,6 @@ public class Docker {
                     String inspectResult = cmd.execCommand(inspectCmd);
                     String statResult = cmd.execCommand(statCommand);
 
-                    JSONObject stateObject = (JSONObject) parser.parse(inspectResult);
                     ContainerInspect containerInspect = gson.fromJson(inspectResult, ContainerInspect.class);
                     ContainerStats containerStats = gson.fromJson(statResult, ContainerStats.class);
 
@@ -76,42 +72,41 @@ public class Docker {
                     double memoryUsagePercent = caculator.calcMemoryUsage();
                     double cpuUsage = caculator.calcCpuUsage();
 
-
                     Eth0 eth0 = containerStats.getNetworks().getEth0();
                     long rxBytes = eth0.getRxBytes();
                     long rxPackets = eth0.getRxPackets();
                     long txBytes = eth0.getTxBytes();
                     long txPackets = eth0.getTxPackets();
 
-                    writer.write("\n\"pid\": "+ pid);
-                    System.out.println("\"pid\": "+ pid);
+                    writer.write("\n\"pid\": " + pid);
+                    System.out.println("\"pid\": " + pid);
                     writer.write("\n\"container_cpu_Num\": " + cpuNum);
                     System.out.println("\"container_cpu_Num\": " + cpuNum);
-                    writer.write("\n\"container_memory\": \""+ maxMemory/1000000 + "MB\"");
-                    System.out.println("\"container_memory\": \""+ maxMemory/1000000 + "MB\"");
+                    writer.write("\n\"container_memory\": \"" + maxMemory / 1000000 + "MB\"");
+                    System.out.println("\"container_memory\": \"" + maxMemory / 1000000 + "MB\"");
                     writer.write("\n\"cpu_usage\": \"" + cpuUsage + "%\"");
                     System.out.println("\"cpu_usage\": \"" + cpuUsage + "%\"");
-                    writer.write("\n\"memory_usage\": \"" + memoryUsage/1000000 + "MB\"");
-                    System.out.println("\"memory_usage\": \"" + memoryUsage/1000000 + "MB\"");
-                    writer.write("\n\"memory_usage_percent\": \""+ memoryUsagePercent + "%\"");
-                    System.out.println("\"memory_usage_percent\": \""+ memoryUsagePercent + "%\"");
-                    writer.write("\n\"rx_bytes\": "+rxBytes);
-                    System.out.println("\"rx_bytes\": "+rxBytes);
-                    writer.write("\n\"rx_packets\": "+rxPackets);
-                    System.out.println("\"rx_packets\": "+rxPackets);
-                    writer.write("\n\"tx_bytes\": "+txBytes);
-                    System.out.println("\"tx_bytes\": "+txBytes);
-                    writer.write("\n\"tx_packets\": "+txPackets);
-                    System.out.print("\"tx_packets\": "+txPackets);
+                    writer.write("\n\"memory_usage\": \"" + memoryUsage / 1000000 + "MB\"");
+                    System.out.println("\"memory_usage\": \"" + memoryUsage / 1000000 + "MB\"");
+                    writer.write("\n\"memory_usage_percent\": \"" + memoryUsagePercent + "%\"");
+                    System.out.println("\"memory_usage_percent\": \"" + memoryUsagePercent + "%\"");
+                    writer.write("\n\"rx_bytes\": " + rxBytes);
+                    System.out.println("\"rx_bytes\": " + rxBytes);
+                    writer.write("\n\"rx_packets\": " + rxPackets);
+                    System.out.println("\"rx_packets\": " + rxPackets);
+                    writer.write("\n\"tx_bytes\": " + txBytes);
+                    System.out.println("\"tx_bytes\": " + txBytes);
+                    writer.write("\n\"tx_packets\": " + txPackets);
+                    System.out.print("\"tx_packets\": " + txPackets);
                     writer.write("}\n");
                     System.out.println("}");
                     writer.flush();
 
                 }
-                writer.write("\n]\n\"host_available_memory\": \"" +hostAvailableMemory/1000000+ "MB\"");
-                System.out.println("]\n\"host_available_memory\": \"" +hostAvailableMemory/1000000+ "MB\"");
-                writer.write("\n\"host_available_cpu\": \"" + (hostCpu-hostCpuUsage) +"%\"}\n\n\n\n");
-                System.out.println("\"host_available_cpu\": \"" + (hostCpu-hostCpuUsage) +"%\"}");
+                writer.write("\n]\n\"host_available_memory\": \"" + hostFreeMemory / 1000000 + "MB\"");
+                System.out.println("]\n\"host_available_memory\": \"" + hostFreeMemory / 1000000 + "MB\"");
+                writer.write("\n\"host_available_cpu\": \"" + (hostCpu - hostCpuUsage) + "%\"}\n\n\n\n");
+                System.out.println("\"host_available_cpu\": \"" + (hostCpu - hostCpuUsage) + "%\"}");
                 writer.flush();
             } catch (Exception e) {
 

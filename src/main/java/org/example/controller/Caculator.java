@@ -18,18 +18,16 @@ public class Caculator {
 
         long cpuDelta = cpuTotal - preCpuTotal;
         long sysCpuDelta = systemCpuUsage - preSystemCpuUsage;
-        return ((double)cpuDelta / sysCpuDelta) * containerStat.getCpuStats().getOnlineCpus() * 100;
+        return ((double) cpuDelta / sysCpuDelta) * containerStat.getCpuStats().getOnlineCpus() * 100;
 
     }
 
     public double calcMemoryUsage() {
-        MemoryStats memoryStats =  containerStat.getMemoryStats();
+        MemoryStats memoryStats = containerStat.getMemoryStats();
         long usedMemory = memoryStats.getUsage();
         long availableMemory = memoryStats.getLimit();
-        return ((double) usedMemory/availableMemory) * 100;
+        return ((double) usedMemory / availableMemory) * 100;
     }
-
-
 
 
 }

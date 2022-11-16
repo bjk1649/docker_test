@@ -24,7 +24,7 @@ public class Cmd {
             String line = null;
             readBuffer = new StringBuffer();
 
-            while((line = bufferedReader.readLine()) != null) {
+            while ((line = bufferedReader.readLine()) != null) {
                 readBuffer.append(line);
                 readBuffer.append("\n");
             }
