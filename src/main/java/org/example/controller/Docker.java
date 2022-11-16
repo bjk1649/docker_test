@@ -13,6 +13,7 @@ import org.example.inspectjson.ContainerInspect;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+//import java.lang.management.OperatingSystemMXBean;
 
 public class Docker {
 
@@ -32,11 +33,12 @@ public class Docker {
                 String result = cmd.execCommand(command);
                 ContainerStat[] containerJsons = gson.fromJson(result, ContainerStat[].class);
                 JSONArray jsonArray = (JSONArray) parser.parse(result);
-                int totalUsingCpus = 0;
                 int numberOfContainer = jsonArray.size();
-                long hostMemory = osBean.getTotalPhysicalMemorySize();
+                long hostMemory = osBean.getTotalMemorySize();
+                long hostMemoryUsage = osBean.getFreeMemorySize();
                 long hostCpu = Runtime.getRuntime().availableProcessors() * 100;
-                long hostAvailableMemory = osBean.getFreePhysicalMemorySize();
+                double hostCpuUsage = osBean.getSystemCpuLoad()*hostCpu;
+                long hostAvailableMemory = Runtime.getRuntime().freeMemory();
                 writer.write("{\"running_container_numbers\": " + numberOfContainer);
                 writer.write("\n\"host_memory\": \"" + (hostMemory/1000000)+ "MB\"");
                 writer.write("\n\"host_cpu\": \"" + hostCpu +"%\"\n[\n");
@@ -63,14 +65,13 @@ public class Docker {
                     String statResult = cmd.execCommand(statCommand);
 
                     JSONObject stateObject = (JSONObject) parser.parse(inspectResult);
-                    ContainerInspect containerInspect = gson.fromJson(statResult, ContainerInspect.class);
+                    ContainerInspect containerInspect = gson.fromJson(inspectResult, ContainerInspect.class);
                     ContainerStats containerStats = gson.fromJson(statResult, ContainerStats.class);
 
                     Caculator caculator = new Caculator(containerStats);
-                    long pid = containerStats.getPidsStats().getCurrent();
+                    long pid = containerInspect.getState().getPid(); //pid
                     long maxMemory = containerStats.getMemoryStats().getLimit(); // 할당된 메모리 크기
                     long cpuNum = containerStats.getCpuStats().getOnlineCpus(); // 할당된 cpu 개수
-                    totalUsingCpus += cpuNum;
                     long memoryUsage = containerStats.getMemoryStats().getUsage();
                     double memoryUsagePercent = caculator.calcMemoryUsage();
                     double cpuUsage = caculator.calcCpuUsage();
@@ -109,8 +110,8 @@ public class Docker {
                 }
                 writer.write("\n]\n\"host_available_memory\": \"" +hostAvailableMemory/1000000+ "MB\"");
                 System.out.println("]\n\"host_available_memory\": \"" +hostAvailableMemory/1000000+ "MB\"");
-                writer.write("\n\"host_available_cpu\": \"" + (hostCpu-totalUsingCpus*100) +"%\"}\n\n\n\n");
-                System.out.println("\"host_available_cpu\": \"" + (hostCpu-totalUsingCpus*100) +"%\"}");
+                writer.write("\n\"host_available_cpu\": \"" + (hostCpu-hostCpuUsage) +"%\"}\n\n\n\n");
+                System.out.println("\"host_available_cpu\": \"" + (hostCpu-hostCpuUsage) +"%\"}");
                 writer.flush();
             } catch (Exception e) {
 
