@@ -28,8 +28,8 @@ public class Docker {
                 String result = cmd.execCommand(command);
                 ContainerStat[] containerJsons = gson.fromJson(result, ContainerStat[].class);
                 int numberOfContainer = containerJsons.length;
-                long hostMemory = osBean.getTotalMemorySize();
-                long hostFreeMemory = osBean.getFreeMemorySize();
+                long hostMemory = osBean.getTotalPhysicalMemorySize();
+                long hostFreeMemory = osBean.getFreePhysicalMemorySize();
                 long hostCpu = Runtime.getRuntime().availableProcessors() * 100;
                 double hostCpuUsage = osBean.getSystemCpuLoad() * hostCpu;
                 writer.write("\n\n\n-----------\n");
